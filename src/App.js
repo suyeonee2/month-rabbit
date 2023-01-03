@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Button from './Button';
+import Image from './Image';
+import Title from './Title.jsx';
+import { useState } from "react"
+import Share from './Share';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function random(n) {
+  return Math.ceil(Math.random() * n);
 }
+function App() {
+  const [value, setValue] = useState(0);
+  
+  const handleClick = () => {
+    const nextValue = random(3);
+    setValue(nextValue);
+  }
+  
+  const handleClearClick = () => {
+    setValue(0);
+  }
 
-export default App;
+  return (
+    <div>
+      <Title />
+      <div>
+        <Image value={value}/>
+      </div>
+        <div className='buttons'>
+        <Button value="getstyle" onClick={handleClick}>뽑기</Button>
+        <Button value="restyle" onClick={handleClearClick}>다시하기</Button>
+      </div>
+      <div>
+        <Share />
+      </div>
+    </div>
+  )
+}
+export default App
