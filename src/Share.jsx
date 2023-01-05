@@ -21,10 +21,13 @@ function Share() {
 
 const Section = styled.section`
   h3 {
-    font-weight: 400;
+    font-family: 'Poor Story', cursive;
+    font-size: 23px;
+    font-weight: normal;
     text-align: center;
     color: black;
     margin-top: 5rem;
+    margin-bottom: 1rem;
   }
   .icons {
     display: flex;
@@ -37,8 +40,16 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 0 0.5rem;
+    margin: 1rem;
   }
+  @media screen and (min-width:280px) and (max-width:800px) {
+    h3 {
+      font-size: 20px;
+    }
+    button {
+      margin: 0 -1rem;
+    }
+}
 `;
 
 export default Share

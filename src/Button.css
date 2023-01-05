@@ -1,0 +1,30 @@
+.pickup {
+    font-family: 'Poor Story', cursive;
+    font-size: 28px;
+    border-radius: 30px;
+    outline: none;
+    width: 100px;
+    height: 70px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    margin-top: 4rem;
+    
+    color: #5e99ca;
+    background-color: #dbf2ff56;
+    box-shadow: rgba(255, 255, 255, 0.276) 0px 5px 30px, rgba(121, 195, 230, 0.737) 0 5px 10px;
+    margin-bottom: 3rem;
+    transition: 0.3s;
+}
+.pickup:hover {
+    background-color: #6ca1c082;
+    color:#ffffff;
+}
+
+
+@media screen and (min-width:280px) and (max-width:800px) {
+    button {
+        font-size: 25px;
+        width: 100px;
+        height: 70px;
+    }
+};

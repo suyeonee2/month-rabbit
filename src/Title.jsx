@@ -1,28 +1,35 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import 타이틀 from './assets/타이틀.png';
 
 function Title() {
   return (
     <Div>
-      <h1 className='main_title'>1월의 수호토끼</h1>
+      <div className='contents'>
+      <img className='main_title' src={타이틀} alt=""/>,
       <h3 className='sub_title'>올해는 계묘년<span>(癸卯年)</span>!</h3>
       <h3 className='desc_title'>한달동안 나를 지켜줄 토끼는?🐰</h3>
+      </div>
     </Div>
   )
 }
 
 const Div = styled.div`
-  h1 {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    margin-top: 4rem;
-  }
+.contents {
+  width: auto;
+  height: 15rem;
+  background-color: transparent;
+  box-shadow: 0 10px 15px #bddad346;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
 
   .main_title {
-    font-size: 30px;
-    font-family: 'Noto Serif KR', serif;
+    width: 400px;
   }
 
   span {
@@ -36,15 +43,27 @@ const Div = styled.div`
     text-align: center;
     align-items: center;
     justify-content: center;
+    color: #4d4d4d;
   }
 
   .sub_title {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
-  
-  .desc_title {
-    margin-bottom: 2rem;
-  }
+
+  @media screen and (min-width:280px) and (max-width:800px) {
+    .main_title {
+      font-size: 40px;
+    }
+    .sub_title {
+      font-size: 20px;
+    }
+    span {
+      font-size: 20px;
+    }
+    .desc_title {
+      font-size: 20px;
+    }
+}
 `;
 
 export default Title
