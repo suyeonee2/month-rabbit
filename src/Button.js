@@ -1,9 +1,10 @@
 
 const getstyle = {
+  fontSize: '20px',
   borderRadius: '99px',
   outline: 'none',
-  width: '80px',
-  height: '50px',
+  width: '100px',
+  height: '70px',
   cursor: 'pointer',
   border: '1px solid #ff960d',
   color: '#ff9d25',
@@ -11,9 +12,10 @@ const getstyle = {
 };
 
 const restyle = {
+  fontSize: '18px',
   borderRadius: '99px',
   outline: 'none',
-  width: '80px',
+  width: '90px',
   height: '50px',
   cursor: 'pointer',
   border: '1px solid #7090ff',

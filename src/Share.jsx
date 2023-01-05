@@ -21,6 +21,7 @@ function Share() {
 
 const Section = styled.section`
   h3 {
+    font-weight: 400;
     text-align: center;
     color: black;
     margin-top: 5rem;
