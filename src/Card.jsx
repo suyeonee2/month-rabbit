@@ -5,7 +5,6 @@ import Data from './Data'
 import styled from 'styled-components'
 
 function Card() {
-
     const [ quote, setQuote ] = useState(Data[0]);
     const getQuote = () => {
         let randomNum = Math.floor(Math.random() * Data.length);
@@ -92,24 +91,58 @@ const Section = styled.section`
 
   }
 
-  @media screen and (min-width:280px) and (max-width: 800px) {
+  @media screen and (min-width: 280px) and (max-width: 800px) {
+    .quote {
+    padding: 0.5rem 1.5rem;
+    width: 280px;
+    height: fit-content;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, transparent, transparent, #ffffff30);
+    border: 2px solid #fff;
+    }
+    .btnContainer {
+      margin: 00 2rem;
+    }
     img {
-        width: 400px;
+    max-width: 280px;
+    border-radius: 10px;
+    border: 1px solid #fff;
     }
-
     .title {
-        font-size: 40px;
-        font-weight: 400;
-    }
+    color: #4d4d4d;
+    font-size: 35px;
+    font-family: 'Poor Story', cursive;
+    font-weight: normal;
+    margin-top: 1rem;
+  }
 
-    .desc {
-        max-width: 800px;
-        font-size: 20px;
-        white-space: pre-line;
-        text-align: center;
-    }
-    
-}
+  .sub {
+    width: 300px;
+    color: #4d4d4d;
+    font-size: 20px;
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  .bar {
+    margin-top: -2px;
+    color: #999999;
+  }
+  
+  .desc {
+    width: 280px;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-family: 'Gothic A1', sans-serif;
+    white-space: pre-line;
+    text-align: center;
+
+    margin: 1.5rem 1.5rem;
+    line-height: 1.5rem;
+
+  }
+  }
 `;
 
 

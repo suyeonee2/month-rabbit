@@ -48,7 +48,7 @@ const Section = styled.section`
       font-size: 20px;
     }
     button {
-      margin: 0.5rem;
+      margin: 0.5rem 0.5rem 2rem;
     }
 }
 `;

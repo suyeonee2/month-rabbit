@@ -7,7 +7,9 @@ import 대나무 from './assets/대나무.png';
 import 스페셜1 from './assets/스페셜1.png';
 import 큐피트 from './assets/큐피트.png';
 
+
 const Data = [
+
     {
       id: 1,
       img: <img src={단호박} alt=""/>,

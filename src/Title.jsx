@@ -51,9 +51,35 @@ const Div = styled.div`
   }
 
   @media screen and (min-width: 280px) and (max-width: 800px) {
-    .sub_title {
-      margin-bottom: 1px;
+  .contents {
+    width: auto;
+    height: 11rem;
+    background-color: transparent;
+    box-shadow: 0 10px 15px #bddad346;
+    margin: auto;
     }
+
+  .main_title {
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 1rem;
+  }
+
+  span {
+    font-size: 15px;
+    color: gray;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+  }
+
+  .sub_title {
+    margin-top: 0rem;
+  }
+
   }
 `;
 
