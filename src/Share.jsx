@@ -42,12 +42,13 @@ const Section = styled.section`
     align-content: center;
     margin: 1rem;
   }
+  
   @media screen and (min-width:280px) and (max-width:800px) {
     h3 {
       font-size: 20px;
     }
     button {
-      margin: 0 -1rem;
+      margin: 0.5rem;
     }
 }
 `;

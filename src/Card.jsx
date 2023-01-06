@@ -92,7 +92,7 @@ const Section = styled.section`
 
   }
 
-  @media screen and (min-width:280px) and (max-width:800px) {
+  @media screen and (min-width:280px) and (max-width: 800px) {
     img {
         width: 400px;
     }
@@ -108,7 +108,7 @@ const Section = styled.section`
         white-space: pre-line;
         text-align: center;
     }
-
+    
 }
 `;
 
