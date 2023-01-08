@@ -3,10 +3,10 @@
     font-size: 28px;
     border-radius: 30px;
     outline: none;
-    width: 100px;
+    width: 180px;
     height: 70px;
     cursor: pointer;
-    border: 1px solid #ffffff;
+    border: 1.5px solid #ffffff;
     margin-top: 4rem;
     
     color: #5e99ca;
@@ -16,15 +16,33 @@
     transition: 0.3s;
 }
 .pickup:hover {
-    background-color: #6ca1c082;
-    color:#ffffff;
+    background-color: #b6e2fc82;
 }
-
+.pickup2 {
+    font-family: 'Poor Story', cursive;
+    font-size: 25px;
+    border-radius: 30px;
+    outline: none;
+    width: 160px;
+    height: 60px;
+    cursor: pointer;
+    border: 1.5px solid #ffffff;
+    margin-top: 4rem;
+    
+    color: #585858;
+    background-color: #eaeaea56;
+    box-shadow: rgba(255, 255, 255, 0.276) 0px 5px 30px, rgba(183, 183, 183, 0.737) 0 5px 10px;
+    margin-bottom: 3rem;
+    transition: 0.3s;
+}
+.pickup2:hover {
+    background-color: #f8ffcf82;
+}
 @media screen and (min-width: 280px) and (max-width: 800px) {
     .pickup {
         font-size: 25px;
         width: 120px;
         height: 60px;
-        margin: 1.5rem 0 3rem;
+        margin: 3rem 0 5rem;
     }
 };

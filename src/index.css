@@ -8,4 +8,21 @@ body {
   background: linear-gradient(300deg, #a8ecffbf, #ffebf6, #dcf8ff);
 }
 
-
+#create-kakao-link-btn {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: -5.5rem 0 10rem;
+  margin-right: 8rem;
+}
+img {
+  width: 50px;
+}
+@media screen and (min-width:280px) and (max-width:800px) {
+  #create-kakao-link-btn {
+    margin: -5rem 0 10rem;
+    margin-right: 8rem;
+  }
+}

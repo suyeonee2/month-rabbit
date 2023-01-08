@@ -1,13 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
 import 타이틀 from './assets/타이틀.png';
+import { Link } from 'react-router-dom';
 
 function Title() {
   return (
     <Div>
       <div className='contents'>
       <img className='main_title' src={타이틀} alt=""/>
-      <h3 className='sub_title'>올해는 계묘년<span>(癸卯年)</span>! <br/> 한달동안 나를 지켜줄 토끼는?🐰</h3>
+      <h3 className='sub_title'>올해는 계묘년<span>(癸卯年)</span>! <br/> 나를 지켜줄 토끼는?🐰</h3>
+      </div>
+      <div className='pickup_btn'>
+        <Link to="/Card">
+        <button className='pickup'>뽑기</button>
+        </Link>
       </div>
     </Div>
   )
@@ -49,7 +55,33 @@ const Div = styled.div`
   .sub_title {
     margin-top: 1rem;
   }
-
+  
+  .pickup_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 6rem;
+  }
+  .pickup {
+    font-family: 'Poor Story', cursive;
+    font-size: 28px;
+    border-radius: 30px;
+    outline: none;
+    width: 180px;
+    height: 70px;
+    cursor: pointer;
+    border: 1.5px solid #ffffff;;
+    
+    color: #5e99ca;
+    background-color: #dbf2ff56;
+    box-shadow: rgba(255, 255, 255, 0.276) 0px 5px 30px, rgba(121, 195, 230, 0.737) 0 5px 10px;
+    margin-bottom: 3rem;
+    transition: 0.3s;
+}
+.pickup:hover {
+    background-color: #b6e2fc82;
+}
   @media screen and (min-width: 280px) and (max-width: 800px) {
   .contents {
     width: auto;
