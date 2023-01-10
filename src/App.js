@@ -4,10 +4,11 @@ import './App.css';
 import Title from './Title.jsx';
 import Card from './Card';
 import ShareButton from './ShareButton';
+import Ad from './Ad';
+
 
 
 function App() {
-  
   return (
     <BrowserRouter>
     <Routes>
@@ -15,7 +16,9 @@ function App() {
       <Route path='/Card' element={<Card />} />
       </Routes>
       <ShareButton />
+      <Ad />
     </BrowserRouter>
+
   )
 }
 
